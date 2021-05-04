@@ -1,0 +1,46 @@
+<!------ HTML Document - HTML Canvas Particles - Mousemove Splash Letters ------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Canvas Particles - Mousemove Splash Letters</title>
+  <!-- Meta Data Tags -->
+    <meta charset="UTF-8"><!-- Unicode Character Encoding -->
+    <meta name="description" content="JavaScript - Mousemove Splash Letters">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Pierson Lippard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsive Viewport Background Tag -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head><!-- HTML head end -->
+  <body>
+    
+    <canvas id="canvas1"></canvas><!-- Canvas1 end -->
+    <h1 id="title1">Mousemove Splash Letters<br>JavaScript</h1>
+
+
+    <script src="script.js"></script><!-- JavaScript end -->
+    <svg>
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0
+                                                               0 1 0 0 0
+                                                               0 0 1 0 0
+                                                               0 0 0 22 -9"/>
+                <feBlend in="SourceGraphic" in2="goo"/>
+            </filter>
+        </defs>
+    </svg>
+
+
+  </body><!-- HTML body end -->
+</html>
